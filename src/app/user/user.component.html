@@ -1,0 +1,9 @@
+<div *ngFor="let user of users; let i = index">
+  <label>Prénom : {{ user.first_name }} </label>
+  <label> Nom de famille : {{ user.last_name }} </label>
+  <label> Rue : {{ user.address.rue }} </label>
+  <label> Age : {{ user.age }} </label>
+  <div *ngFor="let cat of user.cats; let i = index">
+    {{ cat }}
+  </div>
+</div>
